@@ -1,0 +1,57 @@
+﻿<Window x:Class="MHS2Edit.WindowGenes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MHS2Edit"
+        mc:Ignorable="d"
+        Title="WindowGenes" Height="450" Width="800" Loaded="Window_Loaded" Foreground="Black" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <DataTemplate x:Key="GeneTemplate">
+                <WrapPanel>
+                    <TextBlock Text="{Binding Path=ID}"/>
+                    <TextBlock>:</TextBlock>
+                    <TextBlock Text="{Binding Path=Text}"/>
+                </WrapPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        <ComboBox Name="comboBoxGene1" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="0" SelectionChanged="ComboBoxGene1_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene2" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="1" SelectionChanged="ComboBoxGene2_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene3" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="2" SelectionChanged="ComboBoxGene3_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene4" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" SelectionChanged="ComboBoxGene4_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene5" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" SelectionChanged="ComboBoxGene5_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene6" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" SelectionChanged="ComboBoxGene6_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene7" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" SelectionChanged="ComboBoxGene7_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene8" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" SelectionChanged="ComboBoxGene8_SelectionChanged"/>
+        <ComboBox Name="comboBoxGene9" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" SelectionChanged="ComboBoxGene9_SelectionChanged"/>
+        <CheckBox Name="checkBoxGene1" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Checked="CheckBoxGene1_Checked" Unchecked="CheckBoxGene1_Unchecked"/>
+        <CheckBox Name="checkBoxGene2" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
+        <CheckBox Name="checkBoxGene3" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0"/>
+        <CheckBox Name="checkBoxGene4" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
+        <CheckBox Name="checkBoxGene5" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <CheckBox Name="checkBoxGene6" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1"/>
+        <CheckBox Name="checkBoxGene7" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
+        <CheckBox Name="checkBoxGene8" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <CheckBox Name="checkBoxGene9" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2"/>
+        <Image Name="Image1" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" />
+        <Image Name="Image2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0" />
+        <Image Name="Image3" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0" />
+        <Image Name="Image4" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" />
+        <Image Name="Image5" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" />
+        <Image Name="Image6" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" />
+        <Image Name="Image7" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" />
+        <Image Name="Image8" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" />
+        <Image Name="Image9" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" />
+    </Grid>
+</Window>

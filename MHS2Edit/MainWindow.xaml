@@ -5,8 +5,141 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MHS2Edit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MHS2Edit" Height="450" Width="800">
     <Grid>
-        
+        <TabControl Margin="0,38,0,0">
+            <TabItem Header="Character">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="textBoxCharacterName" HorizontalAlignment="Left" Height="23" Margin="57,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="238" TextChanged="TextBoxCharacterName_TextChanged"/>
+                    <TextBox x:Name="textBoxCharacterExp" HorizontalAlignment="Left" Height="23" Margin="57,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBoxCharacterExp_TextChanged"/>
+                    <TextBox x:Name="textBoxCharacterZenny" HorizontalAlignment="Left" Height="23" Margin="57,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBoxCharacterZenny_TextChanged"/>
+                    <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Exp" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Zenny" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Itembox">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl>
+                        <TabItem Header="All">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItems" ItemsSource="{Binding _itemBox.ItemList}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Healing">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsHealing" ItemsSource="{Binding _itemBox.ItemListHealing}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Support">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsSupport" ItemsSource="{Binding _itemBox.ItemListSupport}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Materials">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsMaterials" ItemsSource="{Binding _itemBox.ItemListMaterials}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Facilities">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsFacilities" ItemsSource="{Binding _itemBox.ItemListFacilities}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Growth">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsGrowth" ItemsSource="{Binding _itemBox.ItemListGrowth}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Key-Items">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridItemsKey" ItemsSource="{Binding _itemBox.ItemListKey}" Margin="0" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Index}" ClipboardContentBinding="{x:Null}" Header="Index"/>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Amount}" ClipboardContentBinding="{x:Null}" Header="Amount"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Monsters">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl>
+                        <TabItem Header="Party">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridParty" ItemsSource="{Binding _monsters.MonsterList}" AutoGenerateColumns="False" MouseDoubleClick="DataGridParty_MouseDoubleClick">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="Id"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Exp}" ClipboardContentBinding="{x:Null}" Header="Experience"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Stable">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid Name="DataGridMonsters" ItemsSource="{Binding _monsters.MonsterList}" Margin="10" AutoGenerateColumns="False" MouseDoubleClick="DataGridMonsters_MouseDoubleClick">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding Id}" ClipboardContentBinding="{x:Null}" Header="Id"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+                                        <DataGridTextColumn Binding="{Binding Exp}" ClipboardContentBinding="{x:Null}" Header="Experience"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="10,13,0,0" Width="75" Click="Button_Click" Height="20" VerticalAlignment="Top"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="108,13,0,0" Width="75" Click="Button_Click_1" Height="20" VerticalAlignment="Top"/>
+        <Button Content="Button" Margin="0,10,10,0" VerticalAlignment="Top" Click="Button_Click_2" HorizontalAlignment="Right" Width="75"/>
+
     </Grid>
 </Window>
