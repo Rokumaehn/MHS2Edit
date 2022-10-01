@@ -35,23 +35,77 @@
         <ComboBox Name="comboBoxGene7" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" SelectionChanged="ComboBoxGene7_SelectionChanged"/>
         <ComboBox Name="comboBoxGene8" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" SelectionChanged="ComboBoxGene8_SelectionChanged"/>
         <ComboBox Name="comboBoxGene9" ItemsSource="{Binding Gene.NAMES}" DisplayMemberPath="Name" Margin="10,80,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" SelectionChanged="ComboBoxGene9_SelectionChanged"/>
-        <CheckBox Name="checkBoxGene1" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Checked="CheckBoxGene1_Checked" Unchecked="CheckBoxGene1_Unchecked"/>
-        <CheckBox Name="checkBoxGene2" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
-        <CheckBox Name="checkBoxGene3" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0"/>
-        <CheckBox Name="checkBoxGene4" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
-        <CheckBox Name="checkBoxGene5" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-        <CheckBox Name="checkBoxGene6" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1"/>
-        <CheckBox Name="checkBoxGene7" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
-        <CheckBox Name="checkBoxGene8" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
-        <CheckBox Name="checkBoxGene9" Content="Locked" HorizontalAlignment="Left" Margin="98,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2"/>
-        <Image Name="Image1" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" />
-        <Image Name="Image2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0" />
-        <Image Name="Image3" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0" />
-        <Image Name="Image4" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" />
-        <Image Name="Image5" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" />
-        <Image Name="Image6" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" />
-        <Image Name="Image7" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" />
-        <Image Name="Image8" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" />
-        <Image Name="Image9" HorizontalAlignment="Left" Width="64" Height="64" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" />
+        <CheckBox Name="checkBoxGene1" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Click="checkBoxGene1_Click"/>
+        <CheckBox Name="checkBoxGene2" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0" RenderTransformOrigin="-0.494,1.111" Click="checkBoxGene2_Click"/>
+        <CheckBox Name="checkBoxGene3" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0" Click="checkBoxGene3_Click"/>
+        <CheckBox Name="checkBoxGene4" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" Click="checkBoxGene4_Click"/>
+        <CheckBox Name="checkBoxGene5" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Click="checkBoxGene5_Click"/>
+        <CheckBox Name="checkBoxGene6" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" Click="checkBoxGene6_Click"/>
+        <CheckBox Name="checkBoxGene7" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Click="checkBoxGene7_Click"/>
+        <CheckBox Name="checkBoxGene8" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" Click="checkBoxGene8_Click"/>
+        <CheckBox Name="checkBoxGene9" Content="Locked" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" Click="checkBoxGene9_Click"/>
+        <Image Name="Image1" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" />
+        <Image Name="Image2" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0" />
+        <Image Name="Image3" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0" />
+        <Image Name="Image4" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" />
+        <Image Name="Image5" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" />
+        <Image Name="Image6" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" />
+        <Image Name="Image7" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" />
+        <Image Name="Image8" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" />
+        <Image Name="Image9" HorizontalAlignment="Left" Width="48" Height="48" Margin="98,10,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" />
+        <Label Name="label1" Content="Label1" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0"/>
+        <Label Name="label2" Content="Label2" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
+        <Label Name="label3" Content="Label3" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0"/>
+        <Label Name="label4" Content="Label4" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
+        <Label Name="label5" Content="Label5" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <Label Name="label6" Content="Label1" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1"/>
+        <Label Name="label7" Content="Label1" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
+        <Label Name="label8" Content="Label1" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <Label Name="label9" Content="Label1" Margin="10,56,10,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2"/>
+        
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0"/>
+        <Label Name="labelLevel1" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0"/>
+        <Button Name="buttonLevel1Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="0" Click="ButtonLevel1Plus_Click"/>
+        <Button Name="buttonLevel1Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="0" Click="ButtonLevel1Minus_Click"/>
+        
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
+        <Label Name="labelLevel2" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
+        <Button Name="buttonLevel2Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="0" Click="ButtonLevel2Plus_Click"/>
+        <Button Name="buttonLevel2Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="0" Click="ButtonLevel2Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="0"/>
+        <Label Name="labelLevel3" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="0"/>
+        <Button Name="buttonLevel3Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="0" Click="ButtonLevel3Plus_Click"/>
+        <Button Name="buttonLevel3Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="0" Click="ButtonLevel3Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
+        <Label Name="labelLevel4" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
+        <Button Name="buttonLevel4Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="1" Click="ButtonLevel4Plus_Click"/>
+        <Button Name="buttonLevel4Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="1" Click="ButtonLevel4Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <Label Name="labelLevel5" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
+        <Button Name="buttonLevel5Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="1" Click="ButtonLevel5Plus_Click"/>
+        <Button Name="buttonLevel5Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="1" Click="ButtonLevel5Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1"/>
+        <Label Name="labelLevel6" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1"/>
+        <Button Name="buttonLevel6Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="1" Click="ButtonLevel6Plus_Click"/>
+        <Button Name="buttonLevel6Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="1" Click="ButtonLevel6Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
+        <Label Name="labelLevel7" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2"/>
+        <Button Name="buttonLevel7Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="2" Click="ButtonLevel7Plus_Click"/>
+        <Button Name="buttonLevel7Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="0" Grid.Row="2" Click="ButtonLevel7Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <Label Name="labelLevel8" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2"/>
+        <Button Name="buttonLevel8Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="2" Click="ButtonLevel8Plus_Click"/>
+        <Button Name="buttonLevel8Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="1" Grid.Row="2" Click="ButtonLevel8Minus_Click"/>
+
+        <Label Content="Lvl" Margin="73,101,166,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="2"/>
+        <Label Name="labelLevel9" Content="0" Margin="98,101,147,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="2"/>
+        <Button Name="buttonLevel9Plus" Content="+" HorizontalAlignment="Left" Margin="117,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="2" Click="ButtonLevel9Plus_Click"/>
+        <Button Name="buttonLevel9Minus" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="23" Grid.Column="3" Grid.Row="2" Click="ButtonLevel9Minus_Click"/>
     </Grid>
 </Window>

@@ -94,7 +94,8 @@ namespace MHS2Edit
                 Gene[] g = new Gene[9];
                 for (int i = 0; i < 9; i++)
                 {
-                    g[i] = Gene.GetById( BitConverter.ToUInt32(_data, _startOffset + OFFSET_GENES + i*4) );
+                    var read = BitConverter.ToUInt32(_data, _startOffset + OFFSET_GENES + i * 4);
+                    g[i] = Gene.CreateFromValue( read );
                 }
                 return g;
             }
